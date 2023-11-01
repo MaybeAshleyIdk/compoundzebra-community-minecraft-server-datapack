@@ -1,0 +1,2 @@
+scoreboard objectives remove cz_equalizer_state
+scoreboard objectives remove cz_equalizer_player_health

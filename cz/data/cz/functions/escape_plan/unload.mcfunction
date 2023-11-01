@@ -1,0 +1,2 @@
+scoreboard objectives remove cz_escape_plan_state
+scoreboard objectives remove cz_escape_plan_player_health

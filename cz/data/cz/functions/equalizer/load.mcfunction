@@ -1,0 +1,2 @@
+scoreboard objectives add cz_equalizer_player_health health
+scoreboard objectives add cz_equalizer_state dummy

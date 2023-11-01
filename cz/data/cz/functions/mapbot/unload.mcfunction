@@ -1,0 +1,6 @@
+scoreboard objectives remove mapbot_all
+scoreboard objectives remove mapbot_west
+scoreboard objectives remove mapbot_south
+scoreboard objectives remove mapbot_east
+scoreboard objectives remove mapbot_north
+scoreboard objectives remove mapbot_central
