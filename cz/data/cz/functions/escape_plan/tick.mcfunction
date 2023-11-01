@@ -4,4 +4,8 @@ execute as @a[scores={cz_escape_plan_state=..0,cz_escape_plan_player_health=..18
 execute as @a[scores={cz_escape_plan_state=1,cz_escape_plan_player_health=..10},nbt={SelectedItem: {id: "minecraft:iron_pickaxe", tag: {display: {Name: '{"text":"The Escape Plan"}'}}}}] run function cz:escape_plan/activate_stage2
 execute as @a[scores={cz_escape_plan_state=2,cz_escape_plan_player_health=..2},nbt={SelectedItem: {id: "minecraft:iron_pickaxe", tag: {display: {Name: '{"text":"The Escape Plan"}'}}}}] run function cz:escape_plan/activate_stage3
 
+execute as @a[scores={cz_escape_plan_state=3},nbt={SelectedItem: {id: "minecraft:iron_pickaxe", tag: {display: {Name: '{"text":"The Escape Plan"}'}}}}] unless score @s cz_escape_plan_player_health matches ..2 run function cz:escape_plan/activate_stage2
+execute as @a[scores={cz_escape_plan_state=2},nbt={SelectedItem: {id: "minecraft:iron_pickaxe", tag: {display: {Name: '{"text":"The Escape Plan"}'}}}}] unless score @s cz_escape_plan_player_health matches ..10 run function cz:escape_plan/activate_stage1
+execute as @a[scores={cz_escape_plan_state=1},nbt={SelectedItem: {id: "minecraft:iron_pickaxe", tag: {display: {Name: '{"text":"The Escape Plan"}'}}}}] unless score @s cz_escape_plan_player_health matches ..18 run function cz:escape_plan/deactivate
+
 execute as @a[scores={cz_escape_plan_state=1..},nbt=!{SelectedItem: {id: "minecraft:iron_pickaxe", tag: {display: {Name: '{"text":"The Escape Plan"}'}}}}] run function cz:escape_plan/deactivate
